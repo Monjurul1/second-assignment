@@ -1,0 +1,275 @@
+body{
+    margin: a;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(241, 238, 238);
+}
+.large-container{
+    margin: 0, auto;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: whitesmoke
+    
+}
+.total-manu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inf-pro{
+    font-size: 30px;
+    font-weight: 800px;
+
+}
+.manu i{
+    color: black;
+}
+.manu ul{
+    display: flex;
+    
+}
+.manu ul li{
+    margin-left: 15px;
+    list-style: none;
+
+}
+.manu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700px;
+}
+
+/* -------ent--of-----manu----area---- */
+
+
+
+
+/* ----start-----of-----camera----area------- */
+
+.start-and-camera{
+    display: flex;
+    margin: 0px;
+}
+.start-area{
+    width: 50%;
+}
+.start-area h2{
+    font-weight: 1200px;
+    font-size: 35px;
+    margin-top: 0px;
+}
+.start-area p{
+    margin-bottom: 50px;
+}
+.camera-area {
+    width: 50%;
+    
+}
+.camera-area img{
+    width: 100%;
+}
+button{
+    background-color: #e84393;
+    border:#e84393;
+    font-size: 20px;
+    color: white;
+    
+}
+.preebook{
+    background-color: #e84393;
+    border-radius: 10px;
+    padding: 8px 10px;    
+}
+.preebook i{
+    color: whitesmoke;
+}
+.preebook{
+    width: 200px;
+}
+/* ----the end-----of-----camera----area------- */
+
+
+
+
+/* -----start----of-----logo----area----- */
+
+
+.logos{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    
+}
+.logos img{
+    margin-left: 40px;
+}
+
+/* -----end----of-----logo----area----- */
+
+
+
+
+/* -------start--of-----photos------area----- */
+.Popular-text{
+    margin: 60px auto;
+    text-align: center;
+    font-weight: 800px;
+    font-size: 40px;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 60px;
+    justify-content: center;
+    padding-left: 50px;
+    
+}
+
+.photo img{
+    width: 85%;
+
+}
+.photo p{
+    padding-right:90px
+}
+.photo h2{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.photo .fas{
+    color:gold
+}
+
+
+.see-more-directions{
+    float: right;
+    
+}
+.see-more-directions span, i{
+    color: purple;
+}
+.see-more-directions a{
+    text-decoration: none;
+    color: purple;
+}
+
+
+
+/* -------start-----of----optional----gallary */
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+
+   
+}
+.photo-frame{
+    width: 300px;
+    position: relative;
+  
+}
+.photo-area img{
+    width: 100%;
+
+}
+.photo-title-area{
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+.photo-frame:hover .photo-title-area{
+    display: block;
+    color: white;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight:600px;
+}
+/* -------end-----of----optional----gallary */
+
+
+
+
+
+/* ------influencer----products */
+
+
+.influencer-products{
+    background-color: #130f40;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+
+
+}
+.influencer-products h2, p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.influencer-products i{
+    margin-left: 15px;
+    color: white;
+}
+
+
+/* ---media--query- */
+
+
+/* ------for----mobile-----devices--- */
+
+@media only screen and  (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    
+    .start-and-camera, .photos, .photo-album{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 10px;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+    }
+    .last-logo{
+        display: none;
+    }
+    
+    
+}
+@media only screen and (min-width:688px) and  (max-width:999px) {
+    .container{
+        width: 100%;
+    }
+    .start-and-camera{
+        display: flex;
+        align-items: center;
+    }
+    .photos, .photo-album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+    padding-top: 20px;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+    }
+    .last-logo{
+        display: none;
+    }
+    
+}
+
