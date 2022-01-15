@@ -2,6 +2,7 @@ body{
     margin: a;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(241, 238, 238);
+    overflow-x: hidden;
 }
 .large-container{
     margin: 0, auto;
